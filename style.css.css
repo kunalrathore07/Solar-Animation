@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+main {
+    height: 1000px;
+    width: 1000px;
+    margin: auto;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#sun {
+    width: 150px;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1px solid white;
+}
+
+.planet:nth-child(2) {
+    width: 250px;
+    height: 250px;
+    animation: rotation 3s linear 0s infinite;
+}
+
+.planet:nth-child(3) {
+    width: 420px;
+    height: 420px;
+    animation: rotation 3s linear 0s infinite;
+}
+
+.planet:nth-child(4) {
+    width: 620px;
+    height: 620px;
+    animation: rotation 3s linear 0s infinite;
+}
+
+.planet:nth-child(5) {
+    width: 780px;
+    height: 780px;
+    animation: rotation 3s linear 0s infinite;
+}
+
+
+.mercury {
+    width: 40px;
+    height: 40px;
+    background-color: darkgray;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+}
+
+.venus {
+    width: 70px;
+    height: 70px;
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+    right: 70px;
+}
+
+.earth {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to top, rgb(77, 77, 199), rgb(76, 174, 76));
+    border-radius: 50%;
+    left: 490px;
+    top: 500px;
+    position: absolute;
+}
+
+
+.moon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    position: relative;
+    top: 30px;
+    left: 25px;
+    animation: rotation 3s linear 0s infinite;
+}
+
+.moon img {
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 78px;
+}
+
+.mars{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(57, 52, 52);
+    position: absolute;
+    left: 125px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
